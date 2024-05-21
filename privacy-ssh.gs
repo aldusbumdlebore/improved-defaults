@@ -8,7 +8,6 @@ end function
 
 print("Privacy SSH for streaming")
 print("By aldusbumdlebore")
-print("")
 
 if params.len == 0 or params.len == null then port = 22
 if params.len >= 2 then exit(usage)
