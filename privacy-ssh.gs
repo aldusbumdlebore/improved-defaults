@@ -13,7 +13,6 @@ print("")
 if params.len == 0 or params.len == null then port = 22
 if params.len >= 2 then exit(usage)
 if params.len == 1 then
-	if params[0] == "-h" or params[0] == "--help" then exit(usage)
 	port = params[0].to_int
 end if
 
