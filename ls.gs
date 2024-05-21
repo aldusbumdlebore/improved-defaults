@@ -4,7 +4,7 @@
 
 //command: ls
 ValidateInput = function(input)
-	if input == "-al" or if input == "-la" or input == "-l" or input == "-a" then return true
+	if input == "-al" or input == "-la" or input == "-l" or input == "-a" then return true
 	return false
 end function 
 
