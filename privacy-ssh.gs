@@ -5,15 +5,13 @@
 // perfect for streaming
 
 usage = function()
-    print("Usage: ssh [(opt port)]")
+    print("")
 end function
-port = 22
-if params.len >= 2 then exit(usage)
-if params.len == 1 then
-    if typeof(params[1].to_int) != "number" then exit(usage)
-else
-    port = params[1]
-end if
+
+// pre-alpha not suitable for use
+// working on this section
+// do not use
+
 print("Privacy SSH for streaming")
 print("By aldusbumdlebore")
 print("")
