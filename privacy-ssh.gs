@@ -5,19 +5,25 @@
 // perfect for streaming
 
 usage = function()
-    print("")
+    print("Usage: ssh [(opt) port]");
 end function
-
-// pre-alpha not suitable for use
-// working on this section
-// do not use
 
 print("Privacy SSH for streaming")
 print("By aldusbumdlebore")
 print("")
+
+if params.len == 0 or params.len == null then port = 22
+if params.len >= 2 then exit(usage)
+if params.len == 1 then
+	port = params[0].to_int
+end if
+if typeof(port) != "number" then exit(usage)
+
 user = user_input("Username: ")
 ip = user_input("Ip address: ", true)
 password = user_input("Password: ", true)
+print("")
+print("Connecting.....))
 shell = get_shell.connect_service(ip, port, user, password, "ssh")
 if typeof(shell) == "string" then exit(shell)
 if shell then 
