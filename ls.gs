@@ -1,6 +1,10 @@
+// Not taking credit for this
+// its literally a simple change that improved my usage of ls command 
+// may further improve this in near future 
+
 //command: ls
 ValidateInput = function(input)
-	if input == "-la" or input == "-l" or input == "-a" then return true
+	if input == "-la" or if input == "-la" or input == "-l" or input == "-a" then return true
 	return false
 end function 
 
