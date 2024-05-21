@@ -12,10 +12,7 @@ print("")
 
 if params.len == 0 or params.len == null then port = 22
 if params.len >= 2 then exit(usage)
-if params.len == 1 then
-	port = params[0].to_int
-end if
-
+if params.len == 1 then port = params[0].to_int
 if typeof(port) != "number" then exit(usage)
 
 user = user_input("Username: ")
