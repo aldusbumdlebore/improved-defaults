@@ -23,7 +23,7 @@ user = user_input("Username: ")
 ip = user_input("Ip address: ", true)
 password = user_input("Password: ", true)
 print("")
-print("Connecting.....))
+print("Connecting.....")
 shell = get_shell.connect_service(ip, port, user, password, "ssh")
 if typeof(shell) == "string" then exit(shell)
 if shell then 
