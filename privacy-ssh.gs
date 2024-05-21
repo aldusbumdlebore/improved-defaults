@@ -16,7 +16,7 @@ if params.len == 1 then port = params[0].to_int
 if typeof(port) != "number" then exit(usage)
 
 user = user_input("Username: ")
-ip = user_input("Ip address: ", true)
+ip = user_input("IP address: ", true)
 password = user_input("Password: ", true)
 print("")
 print("Connecting.....")
