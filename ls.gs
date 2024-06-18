@@ -1,6 +1,5 @@
-// Not taking credit for this
-// its literally a simple change that improved my usage of ls command 
-// may further improve this in near future 
+// 06/18/2024 - fixed bug in default that would print long form if "l" was in computer username, assuming likewise for the "a" option
+// initital commit added the option of using "-al"
 
 //command: ls
 ValidateInput = function(input)
@@ -27,13 +26,13 @@ else
 
 		else
 			showHide = 0
-			if params and params[0].indexOf("a") != null then
-				showHide = 1
+			if params and params[0] == "-a" or params and params[0] == "-al" or params and params[0] == "-la" then
+			showHide = 1
 			end if
 
 			showDetails = 0
-			if params and params[0].indexOf("l") != null then
-				showDetails = 1
+			if params and params[0] == "-l" or params and params[0] == "-al" or params and params[0] == "-la" then
+			showDetails = 1
 			end if
 
 			subFiles = folder.get_folders + folder.get_files
