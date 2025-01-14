@@ -15,7 +15,8 @@ if params.len == 1 then port = params[0].to_int
 if typeof(port) != "number" then exit(usage)
 
 user = user_input("Username: ")
-ip = user_input("IP address: ", true)
+ip = user_input("IP/WEB address: ", true)
+if ip.matches("a-zA-Z.") then ip = nsloolup(ip)
 password = user_input("Password: " + char(0))
 print("")
 print("Connecting.....")
